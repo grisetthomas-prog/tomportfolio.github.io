@@ -1,0 +1,392 @@
+/* ------------------ GLOBAL ------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------------------ HEADER ------------------ */
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* ------------------ NAVBAR ------------------ */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 28px;
+  color: #c0392b;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #c0392b;
+}
+
+h1 {
+  color: #c0392b;
+}
+
+/* ------------------ INTRO ------------------ */
+
+.intro {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ------------------ MENU ------------------ */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #333;
+  margin-top: 30px;
+}
+
+ul {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+/* ------------------ PHOTOS ------------------ */
+
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+/* ------------------ HERO ------------------ */
+
+.hero {
+  text-align: center;
+  margin-top: 40px;
+  padding: 40px;
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+  color: white;
+  border-radius: 15px;
+}
+
+.profile-pic {
+  width: 100%;
+  max-width: 200px;   /* OPTION C : fluide mais limité */
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid white;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------ SKILLS ------------------ */
+
+#skills ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#skills li {
+  list-style: none;
+  background: #ffffff;
+  padding: 12px 25px;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: bold;
+  color: #333;
+  border: 2px solid #c0392b;
+  transition: 0.3s;
+}
+
+#skills li:hover {
+  background: #c0392b;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ------------------ PROJECT CARDS ------------------ */
+
+.project-card {
+  background: white;
+  color: #333;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  animation: fadeIn 1s forwards;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  color: #c0392b;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.project-card button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #c0392b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.project-card button:hover {
+  background: #a93226;
+  box-shadow: 0 0 10px rgba(192, 57, 43, 0.6);
+}
+
+/* ------------------ PROJECT GRID ------------------ */
+
+.projects-detail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  align-items: start;
+}
+
+/* ------------------ CONTACT / ABOUT ------------------ */
+
+#contact,
+#about {
+  text-align: center;
+  margin-top: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ------------------ GALLERY ------------------ */
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.gallery img {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ------------------ CONTACT FORM ------------------ */
+
+.contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* ------------------ BUTTONS ------------------ */
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #c0392b;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #a93226;
+  box-shadow: 0 0 10px rgba(192, 57, 43, 0.6);
+}
+
+/* ------------------ DARK MODE ------------------ */
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .nav-links a {
+  color: white;
+}
+
+.dark-mode #skills li {
+  background: #2c2c2c;
+  color: white;
+  border-color: #e74c3c;
+}
+
+.dark-mode #skills li:hover {
+  background: #e74c3c;
+}
+
+.dark-mode #about,
+.dark-mode #contact,
+.dark-mode .contact-form {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+  background: #3a3a3a;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode .hero {
+  background: linear-gradient(135deg, #000, #333);
+}
+
+.dark-mode footer {
+  color: #ccc;
+}
+
+.dark-mode .project-card {
+  background: #2c2c2c;
+  color: white;
+}
+
+.dark-mode .project-card h3 {
+  color: #e74c3c;
+}
+
+.dark-mode .project-card p {
+  color: #ddd;
+}
+
+.dark-mode .project-card button {
+  background: #e74c3c;
+}
+
+.dark-mode .project-card button:hover {
+  background: #c0392b;
+}
+
+/* ------------------ ANIMATIONS ------------------ */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+@media (max-width: 900px) {
+  .projects-detail {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .projects-detail {
+    grid-template-columns: 1fr;
+  }
+}

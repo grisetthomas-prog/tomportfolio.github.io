@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Tom Dev</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <h1 class="logo">Tom Dev</h1>
+<li><a href="contact.html">Contact</a></li>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button id="dark-mode-btn">Mode sombre</button>
+  </header>
+
+  <section class="hero">
+ <img src=img/tom.png class="profile-pic">
+  <h2>Tom — Développeur Web Junior</h2>
+  <p>Passionné par le développement web, la création de sites modernes et les projets interactifs.</p>
+
+  <section class="hero fade-in">
+<section id="about" class="fade-in">
+<section id="skills" class="fade-in">
+<section id="projects" class="fade-in">
+<section id="contact" class="fade-in">
+
+</section>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Je suis Tom, futur développeur web passionné, actuellement en formation DWWM...</p>
+  </section>
+
+  <section id="skills">
+    <h2>Compétences</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>Git / GitHub</li>
+    </ul>
+  </section>
+
+ <section id="projects">
+  <h2>Projets</h2>
+
+  <div class="projects-detail">
+
+    <div class="project-card">
+      <h3>Restaurant Le Tom Royal</h3>
+      <p>Site vitrine moderne avec menu, galerie et formulaire de contact.</p>
+      <button onclick="window.location.href='projets.html#restaurant'">Voir le projet</button>
+    </div>
+
+    <div class="project-card">
+      <h3>Générateur de mot de passe</h3>
+      <p>Application JavaScript pour créer des mots de passe sécurisés.</p>
+      <button onclick="window.location.href='projets.html#password'">Voir le projet</button>
+    </div>
+
+    <div class="project-card">
+      <h3>To‑Do List</h3>
+      <p>Gestionnaire de tâches simple et efficace en JavaScript.</p>
+      <button onclick="window.location.href='projets.html#todo'">Voir le projet</button>
+    </div>
+
+  </div>
+
+  <button onclick="window.location.href='projets.html'" style="margin-top:30px;">
+    Voir les projets détaillés
+  </button>
+</section>
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><a href="contact.html">Accéder au formulaire de contact</a></p>
+
+  </section>
+
+  <footer>
+    <p>Portfolio créé par Tom</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
