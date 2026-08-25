@@ -1,0 +1,93 @@
+/* ============================
+   CONTACT — PRO & MODERNE
+============================ */
+
+.contact-section {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 0.6s ease;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  color: var(--accent);
+  margin-bottom: 10px;
+  border-left: 5px solid var(--accent);
+  padding-left: 10px;
+}
+
+.contact-section .intro {
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  color: white;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: var(--accent);
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: #ffffff;
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.back-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: var(--accent);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.back-btn:hover {
+  background: #ffffff;
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+/* Animation fade */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

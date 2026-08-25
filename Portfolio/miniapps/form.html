@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<div id="loader"><div class="spinner"></div></div>
+
+<section class="section page-transition miniapp">
+
+  <h2>Formulaire dynamique</h2>
+
+  <div class="card">
+    <form id="form">
+      <input type="text" id="name" placeholder="Nom">
+      <input type="email" id="email" placeholder="Email">
+      <textarea id="msg" placeholder="Message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <p id="form-result"></p>
+  </div>
+
+  <button onclick="history.back()">Retour</button>
+
+</section>
+
+<script src="../script.js"></script>
+</body>
+</html>

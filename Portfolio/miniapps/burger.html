@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Burger</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<h2>Menu burger animé</h2>
+
+<div id="menu" style="display:none;">
+  <p>Item 1</p>
+  <p>Item 2</p>
+  <p>Item 3</p>
+</div>
+
+<button onclick="toggle()">Menu</button>
+
+<script>
+  function toggle() {
+    const m = document.getElementById("menu");
+    m.style.display = m.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+</body>
+</html>

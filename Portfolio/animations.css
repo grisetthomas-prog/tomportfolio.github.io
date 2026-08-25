@@ -1,0 +1,97 @@
+/* ============================
+   ANIMATIONS CSS — PRO & MODERNE
+============================ */
+
+.animations-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 0.6s ease;
+}
+
+.title-anim {
+  font-size: 32px;
+  color: var(--accent);
+  margin-bottom: 20px;
+  animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.anim-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.anim-card {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover smooth */
+.hover-anim:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.08);
+}
+
+/* Pulse */
+.pulse-anim {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Slide-in */
+.slide-anim {
+  animation: slideIn 0.8s ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Rotation */
+.rotate-anim:hover {
+  transform: rotate(5deg);
+}
+
+/* Bouton retour */
+.animations-section button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: var(--accent);
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.animations-section button:hover {
+  background: #ffffff;
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+/* Fade */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

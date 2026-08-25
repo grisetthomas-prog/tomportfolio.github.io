@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Animations CSS - Tom Dev</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Animations CSS créées par Tom : transitions, hover, keyframes, effets modernes.">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<header class="navbar">
+  <h1 class="logo">Tom Dev</h1>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="skills.html">Compétences</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="advanced.html">Avancés</a></li>
+      <li><a href="miniapps.html">Mini‑apps JS</a></li>
+      <li><a href="animations.html">Animations CSS</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="tools.html">Outils</a></li>
+      <li><a href="goals.html">Objectifs</a></li>
+      <li><a href="timeline.html">Parcours</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<section class="section fade">
+
+  <h2>Animations CSS</h2>
+
+  <p style="opacity:0.8; margin-bottom:20px;">
+    Voici mes animations CSS : transitions, hover effects, keyframes, effets modernes
+    et interactions visuelles.
+  </p>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px;">
+
+    <div class="card" style="text-align:center;">
+      <h3>Hover Pulse</h3>
+      <p>Effet de pulsation au survol.</p>
+      <div class="demo-box pulse-demo"></div>
+    </div>
+
+    <div class="card" style="text-align:center;">
+      <h3>Slide‑In</h3>
+      <p>Entrée animée depuis la gauche.</p>
+      <div class="demo-box slide-demo"></div>
+    </div>
+
+    <div class="card" style="text-align:center;">
+      <h3>Rotation</h3>
+      <p>Rotation douce au survol.</p>
+      <div class="demo-box rotate-demo"></div>
+    </div>
+
+    <div class="card" style="text-align:center;">
+      <h3>Fade‑In</h3>
+      <p>Apparition progressive.</p>
+      <div class="demo-box fade-demo"></div>
+    </div>
+
+  </div>
+
+</section>
+
+<footer style="text-align:center; padding:20px; opacity:0.6;">
+  Portfolio — Tom Dev
+</footer>
+
+<script src="script.js"></script>
+
+<style>
+  .demo-box {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    background: var(--accent);
+    border-radius: 10px;
+  }
+
+  .pulse-demo:hover {
+    animation: pulse 0.6s infinite;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
+
+  .slide-demo {
+    animation: slideIn 0.8s ease;
+  }
+
+  @keyframes slideIn {
+    from { transform: translateX(-40px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  .rotate-demo:hover {
+    transform: rotate(20deg);
+    transition: transform 0.3s ease;
+  }
+
+  .fade-demo {
+    animation: fadeIn 1s ease;
+  }
+</style>
+
+</body>
+</html>
