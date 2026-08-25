@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini‑apps JS - Tom Dev</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mini‑applications JavaScript créées par Tom : compteur, citations, slider, calculatrice, dark mode, interactions.">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<header class="navbar">
+  <h1 class="logo">Tom Dev</h1>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="skills.html">Compétences</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="advanced.html">Avancés</a></li>
+      <li><a href="miniapps.html">Mini‑apps JS</a></li>
+      <li><a href="animations.html">Animations CSS</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="tools.html">Outils</a></li>
+      <li><a href="goals.html">Objectifs</a></li>
+      <li><a href="timeline.html">Parcours</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<section class="section fade">
+
+  <h2>Mini‑applications JavaScript</h2>
+
+  <p style="opacity:0.8; margin-bottom:20px;">
+    Voici mes mini‑apps JavaScript : des petits projets pratiques pour apprendre le DOM,
+    les événements, la logique, les interactions et l’organisation du code.
+  </p>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px;">
+
+    <div class="card">
+      <h3>Compteur</h3>
+      <p>Incrémentation, décrémentation, reset, logique simple.</p>
+      <a class="btn" href="miniapps/compteur.html">Tester</a>
+    </div>
+
+    <div class="card">
+      <h3>Citations aléatoires</h3>
+      <p>Affichage dynamique, tableau JS, random.</p>
+      <a class="btn" href="miniapps/citations.html">Tester</a>
+    </div>
+
+    <div class="card">
+      <h3>Slider d’images</h3>
+      <p>Navigation, transitions, DOM, responsive.</p>
+      <a class="btn" href="miniapps/slider.html">Tester</a>
+    </div>
+
+    <div class="card">
+      <h3>Calculatrice</h3>
+      <p>Opérations, logique, boutons, affichage.</p>
+      <a class="btn" href="miniapps/calculatrice.html">Tester</a>
+    </div>
+
+    <div class="card">
+      <h3>Dark mode</h3>
+      <p>Toggle, classes, stockage local.</p>
+      <a class="btn" href="miniapps/darkmode.html">Tester</a>
+    </div>
+
+    <div class="card">
+      <h3>Mini‑formulaire</h3>
+      <p>Validation, messages, interactions.</p>
+      <a class="btn" href="miniapps/form.html">Tester</a>
+    </div>
+
+  </div>
+
+</section>
+
+<footer style="text-align:center; padding:20px; opacity:0.6;">
+  Portfolio — Tom Dev
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
